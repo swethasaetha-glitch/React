@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { userContext } from './pages/Home'
 
-const User = (props) => {
+const User = ({name}) => {
+  const a=useContext(userContext)
   return (
     <div>
-        I am {props.name}
+      <h2>usecontext value:{a}</h2>
+      i am {name}
     </div>
     
   )

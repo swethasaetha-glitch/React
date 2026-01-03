@@ -1,8 +1,12 @@
-import {useState} from 'react'
+import React, { useState, useEffect } from 'react';
+
 import './State.css';
 const State = () => {
     const [count,setCount]=useState(0)
     const [like,setLike]=useState(0)
+    useEffect(()=>{
+    console.log("from useEffect");
+  },[count])
   return (
     <div>
         <h1>UseState Example</h1>
