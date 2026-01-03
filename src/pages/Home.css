@@ -1,0 +1,146 @@
+/* Global Reset and Font Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full Page Layout */
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f6f9; /* Light page background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start from top instead of vertically centering */
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px; /* Add extra padding around the container */
+}
+
+/* Section Styling (State, Form, User) */
+section {
+  width: 100%;
+  max-width: 800px; /* Limit max width */
+  margin: 30px 0; /* Add more vertical space between sections */
+  padding: 40px; /* More padding inside each section */
+  background-color: #f9f9f9; /* Light color inside the border */
+  border: 2px solid #ccc; /* Border around each section */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center content inside each section */
+}
+
+section:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* State Section Styling */
+.state-section {
+  background-color: #e3f2fd; /* Soft blue */
+  border-left: 5px solid #1e88e5; /* Accent left border */
+}
+
+.state-section h2 {
+  color: #1e88e5;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.state-section p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Form Section Styling */
+.form-section {
+  background-color: #e8f5e9; /* Soft green */
+  border-left: 5px solid #43a047; /* Accent left border */
+}
+
+.form-section h2 {
+  color: #43a047;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Add space between inputs/buttons */
+  align-items: center;
+}
+
+.form-section input,
+.form-section button {
+  padding: 14px 25px; /* Slightly bigger input/button */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 80%; /* Limit width to 80% */
+}
+
+.form-section input:focus,
+.form-section button:focus {
+  border-color: #43a047;
+}
+
+.form-section button {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #388e3c;
+}
+
+/* User Section Styling */
+.user-section {
+  background-color: #fff3e0; /* Soft orange */
+  border-left: 5px solid #fb8c00;
+}
+
+.user-section h2 {
+  color: #fb8c00;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.user-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  section {
+    width: 100%;
+    padding: 25px;
+    margin: 25px 0; /* Adjust spacing for smaller screens */
+  }
+
+  .form-section input,
+  .form-section button {
+    width: 100%;
+  }
+}

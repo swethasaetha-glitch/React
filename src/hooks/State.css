@@ -1,0 +1,86 @@
+/* Container for the State component */
+.state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between elements */
+  width: 100%;
+  max-width: 350px; /* Compact width */
+  padding: 20px;
+  background-color: #e3f2fd; /* Light blue background */
+  border: 2px solid #1e88e5; /* Blue border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px auto; /* Center horizontally with margin */
+  text-align: center;
+}
+
+/* Headings */
+.state-container h1 {
+  font-size: 22px;
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+.state-container h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Buttons */
+.state-container button {
+  padding: 8px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1e88e5;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.state-container button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift */
+}
+
+/* Likes buttons special style */
+.state-container .like-btn {
+  background-color: #43a047; /* Green for likes */
+}
+
+.state-container .like-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Sad button style */
+.state-container .dislike-btn {
+  background-color: #f44336; /* Red for dislikes */
+}
+
+.state-container .dislike-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .state-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .state-container h1 {
+    font-size: 20px;
+  }
+
+  .state-container h2 {
+    font-size: 16px;
+  }
+
+  .state-container button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 4px;
+  }
+}
